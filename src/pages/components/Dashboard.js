@@ -1,14 +1,11 @@
 import { useState } from "react";
 
-
-
 export default function Dashboard() {
     const [jobTitle, setJobTitle] = useState("");
     const [industry, setIndustry] = useState("");
     const [keyword, setKeyword] = useState("");
     const [tone, setTone] = useState("");
     const [numWords, setNumWords] = useState("");
-
     const [generatedText, setGeneratedText] = useState("");
     const [isGenerating, setIsGenerating] = useState(false);
 
@@ -32,6 +29,7 @@ export default function Dashboard() {
         setIsGenerating(false);
         setGeneratedText(data.data.trim());
     }
+
     return (
         <div className="flex justify-center items-center">
             <div className="w-1/2 p-4 ">
@@ -101,6 +99,5 @@ export default function Dashboard() {
             </div>
         </div >
     );
-
 }
 

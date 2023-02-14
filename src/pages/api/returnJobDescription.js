@@ -22,7 +22,6 @@ const generateDescription = async ({ jobTitle, industry, keyword, numWords, tone
     catch (err) {
         console.log(err);
     }
-
 }
 
 export default async function handler(req, res) {
