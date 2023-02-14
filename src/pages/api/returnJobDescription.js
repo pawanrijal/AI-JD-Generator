@@ -11,7 +11,7 @@ const generateDescription = async ({ jobTitle, industry, keyword, numWords, tone
                 ${industry ? `in the ${industry} industry` : ""} that is around ${numWords || 200
                     } words in a ${tone || "neutral"} tone. ${keyword ? `Incorporate the following keywords: ${keyword}.` : ""
                     }. The job position should be described in a way that is SEO friendly, highlighting its unique features and benefits`,
-                max_tokens: 100,
+                max_tokens: 200,
                 temperature: 0.5,
             }),
         }
